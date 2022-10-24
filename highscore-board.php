@@ -22,7 +22,7 @@ require(__DIR__ . "./difficulty.php"); */
     <main>
 
         <div class="score-screen">
-            <section class="score-section">
+            <section class="highscore-section">
                 <div class="win-or-lose">
                     <h3>Highscore</h3>
                     <ol>
