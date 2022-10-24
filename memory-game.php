@@ -21,32 +21,40 @@ require(__DIR__ . "./difficulty.php"); */
     </header>
     <main>
 
-        <div class="playing-board">
+        <section class="game-screen">
+            <section class="playing-board">
 
-            <div class="memory-board">
-                <!-- <?php
-                        foreach ($themeChosen as $image) {
-                        ?>
+                <div class="memory-board">
+                    <div class="grid-board">
+                        <!-- <?php
+                                foreach ($themeChosen as $image) {
+                                ?>
                     <img src="<?php echo $image['img'] ?>" alt="<?php echo $image['name'] ?>">
                     <img src="<?php echo $image['img'] ?>" alt="<?php echo $image['name'] ?>">
                 <?php
-                        }
+                                }
 
                 ?> -->
-            </div>
+                    </div>
+                </div>
 
-            <div class="information">
-                <div class="score">
-                    <p>Score:</p>
+                <div class="information">
+                    <div class="time">
+                        <p>Time left:</p>
+                        <p>1:30</p>
+                    </div>
+                    <div class="pair-left">
+                        <p>Pairs left:</p>
+                        <p>4</p>
+                    </div>
+                    <div class="score">
+                        <p>Score:</p>
+                        <p>03259045</p>
+                    </div>
                 </div>
-                <div class="pair-left">
-                    <p>Pairs left:</p>
-                </div>
-                <div class="time">
-                    <p>Time left:</p>
-                </div>
-            </div>
-        </div>
+            </section>
+        </section>
+
 
         <a href="score-screen.php">final score</a>
         <a href="difficulty.php">back</a>

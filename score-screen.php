@@ -20,7 +20,6 @@ require(__DIR__ . "./difficulty.php"); */
 
     </header>
     <main>
-
         <div class="score-screen">
             <section class="score-section">
                 <div class="win-or-lose">
@@ -38,11 +37,9 @@ require(__DIR__ . "./difficulty.php"); */
                     </button>
                 </form>
             </section>
-
-            <a href="memory-game.php">Back</a>
-            <a href="highscore-board.php">highscore board</a>
-
         </div>
+        <a href="memory-game.php">Back</a>
+        <a href="highscore-board.php">highscore board</a>
     </main>
 
 </body>
