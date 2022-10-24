@@ -24,15 +24,26 @@ require(__DIR__ . "./memory-cards.php");
         <div class="theme-buttons">
             <button class="hitman">
                 <a href="difficulty.php">Hitman</a>
-                <img src="" alt="">
+
+                <?php $themeChosen = $themeHitman ?>
+
             </button>
             <button class="fire-emblem">
                 <a href="difficulty.php">Fire Emblem</a>
-                <img src="" alt="">
+
+                <?php $themeChosen = $themeFireEmblem ?>
+
             </button>
             <button class="pokemon">
                 <a href="difficulty.php">Pokemon</a>
-                <img src="" alt="">
+
+                <?php $themeChosen = $themePokemon ?>
+
+            </button>
+        </div>
+        <div class="back-button">
+            <button>
+                <a href="index.php">Back</a>
             </button>
         </div>
     </main>

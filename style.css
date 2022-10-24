@@ -1,21 +1,48 @@
 :root {
-  --background-color: white;
-  --font-color: black;
-  --card-color: aqua;
-  --button-color: orange;
+  --background-color: #ffffff;
+  --font-color: #000000;
+  --memory-card-color: #a6c9a9;
+  --easy-button-color: #f5e6e1;
+  --medium-button-color: #aecfea;
+  --hard-button-color: #b78fa2;
+  --you-win: #5aeb66;
+  --you-lose: #eb5a5a;
+  --button-border: #573846;
+}
+
+@font-face {
+  font-family: Lexend;
+  src: local('Lexend'), url('fonts/Lexend-Regular.woff2') format('woff2'),
+    url('fonts/Lexend-Regular.woff') format('woff');
 }
 
 body {
   width: 100%;
   height: 100%;
   margin: 0;
+  font-family: 'Lexend';
+  background-color: var(--background-color);
+}
+
+a {
+  font-family: 'Lexend';
+  text-decoration: none;
+  color: var(--font-color);
+  font-size: 24px;
+}
+
+.back-to-start a,
+.play-again a,
+.submit a {
+  font-size: 18px;
 }
 
 h1 {
   font-size: 100px;
 }
 
-h2 {
+h2,
+h3 {
   font-size: 60px;
 }
 
@@ -24,9 +51,20 @@ h2 {
   margin-top: 70px;
 }
 
+button a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  border: 2px solid var(--button-border);
+}
+
 .memories-title,
 .theme-title,
-.difficulty-title {
+.difficulty-title,
+.back-button {
   display: flex;
   justify-content: center;
 }
@@ -38,30 +76,76 @@ h2 {
   justify-content: center;
   align-items: center;
   gap: 100px;
-  height: 300px;
 }
 
-.start-button button {
-  width: 100px;
-  height: 50px;
+.start-button button,
+.back-button button,
+.back-to-start,
+.play-again,
+.submit {
+  width: 150px;
+  height: 60px;
+  border-radius: 10px;
 }
 
 .theme-buttons button,
 .difficulty-buttons button {
-  width: 100px;
+  width: 175px;
   height: 100px;
 }
 
-.easy {
-  background-color: aqua;
+.choice-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
 }
 
-.medium {
-  background-color: bisque;
+.back-to-start,
+.play-again,
+.submit {
+  margin-top: 40px;
 }
 
-.hard {
-  background-color: burlywood;
+.back-button button,
+.start-button button {
+  margin-top: 80px;
+  background-color: var(--memory-card-color);
+}
+
+.easy,
+.medium,
+.hard,
+.hitman,
+.fire-emblem,
+.pokemon {
+  border-radius: 20px;
+  margin-top: 60px;
+}
+
+.score-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.easy,
+.hitman,
+.submit {
+  background-color: var(--easy-button-color);
+}
+
+.medium,
+.fire-emblem,
+.back-to-start {
+  background-color: var(--medium-button-color);
+}
+
+.hard,
+.pokemon,
+.play-again {
+  background-color: var(--hard-button-color);
 }
 
 .playing-board {
@@ -74,8 +158,4 @@ h2 {
   display: grid;
   grid-template-columns: repeat(6, 80px);
   grid-template-rows: repeat(5, 80px);
-}
-
-a {
-  text-decoration: none;
 }

@@ -32,6 +32,13 @@ require(__DIR__ . "./memory-cards.php");
                 <a href="memory-game.php">Hard</a>
             </button>
         </div>
+
+        <div class="back-button">
+            <button class="back">
+                <a href="theme.php">Back</a>
+            </button>
+        </div>
+
     </main>
 
 </body>

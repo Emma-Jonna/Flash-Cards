@@ -1,6 +1,7 @@
 <?php
 
-require(__DIR__ . "./memory-cards.php");
+/* require(__DIR__ . "./memory-cards.php");
+require(__DIR__ . "./difficulty.php"); */
 ?>
 
 <!DOCTYPE html>
@@ -23,7 +24,15 @@ require(__DIR__ . "./memory-cards.php");
         <div class="playing-board">
 
             <div class="memory-board">
+                <!-- <?php
+                        foreach ($themeChosen as $image) {
+                        ?>
+                    <img src="<?php echo $image['img'] ?>" alt="<?php echo $image['name'] ?>">
+                    <img src="<?php echo $image['img'] ?>" alt="<?php echo $image['name'] ?>">
+                <?php
+                        }
 
+                ?> -->
             </div>
 
             <div class="information">
@@ -38,6 +47,9 @@ require(__DIR__ . "./memory-cards.php");
                 </div>
             </div>
         </div>
+
+        <a href="score-screen.php">final score</a>
+        <a href="difficulty.php">back</a>
     </main>
 
 </body>
