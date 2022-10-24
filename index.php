@@ -1,4 +1,4 @@
-<?= 'The Elephpent in the Room';
+<?php
 
 require(__DIR__ . "./memory-cards.php");
 ?>
@@ -26,6 +26,7 @@ require(__DIR__ . "./memory-cards.php");
                 <a href="theme.php">Start</a>
             </button>
         </div>
+
     </main>
 
 </body>
