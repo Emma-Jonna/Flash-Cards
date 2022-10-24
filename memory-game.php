@@ -1,4 +1,4 @@
-<?= 'The Elephpent in the Room';
+<?php
 
 require(__DIR__ . "./memory-cards.php");
 ?>
@@ -28,13 +28,13 @@ require(__DIR__ . "./memory-cards.php");
 
             <div class="information">
                 <div class="score">
-
+                    <p>Score:</p>
                 </div>
                 <div class="pair-left">
-
+                    <p>Pairs left:</p>
                 </div>
                 <div class="time">
-
+                    <p>Time left:</p>
                 </div>
             </div>
         </div>

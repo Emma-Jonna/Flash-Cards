@@ -16,7 +16,7 @@ require(__DIR__ . "./memory-cards.php");
 
 <body>
     <header>
-        <div class="title">
+        <div class="memories-title">
             <h1>Memories</h1>
         </div>
     </header>

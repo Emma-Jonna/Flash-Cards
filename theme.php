@@ -16,7 +16,9 @@ require(__DIR__ . "./memory-cards.php");
 
 <body>
     <header>
-        <h2>Chose the theme</h2>
+        <div class="theme-title">
+            <h2>Chose the theme</h2>
+        </div>
     </header>
     <main>
         <div class="theme-buttons">

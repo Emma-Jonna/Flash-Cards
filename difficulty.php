@@ -16,21 +16,20 @@ require(__DIR__ . "./memory-cards.php");
 
 <body>
     <header>
-        <h2>Chose the difficulty</h2>
+        <div class="difficulty-title">
+            <h2>Chose the difficulty</h2>
+        </div>
     </header>
     <main>
         <div class="difficulty-buttons">
             <button class="easy">
-                <a href="">Easy</a>
-                <img src="" alt="">
+                <a href="memory-game.php">Easy</a>
             </button>
             <button class="medium">
-                <a href="">Medium</a>
-                <img src="" alt="">
+                <a href="memory-game.php">Medium</a>
             </button>
             <button class="hard">
-                <a href="">Hard</a>
-                <img src="" alt="">
+                <a href="memory-game.php">Hard</a>
             </button>
         </div>
     </main>
