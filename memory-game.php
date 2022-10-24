@@ -16,15 +16,27 @@ require(__DIR__ . "./memory-cards.php");
 
 <body>
     <header>
-        <div class="title">
-            <h1>Memories</h1>
-        </div>
+
     </header>
     <main>
-        <div class="start-button">
-            <button>
-                <a href="theme.php">Start</a>
-            </button>
+
+        <div class="playing-board">
+
+            <div class="memory-board">
+
+            </div>
+
+            <div class="information">
+                <div class="score">
+
+                </div>
+                <div class="pair-left">
+
+                </div>
+                <div class="time">
+
+                </div>
+            </div>
         </div>
     </main>
 

@@ -1,15 +1,46 @@
-body {
-  width: 100vh;
-  height: 100vh;
+:root {
+  --background-color: white;
+  --font-color: black;
+  --card-color: aqua;
+  --button-color: orange;
 }
 
-.boards {
+body {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-size: 100px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.start-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.start-button button {
+  width: 100px;
+  height: 50px;
+}
+
+.playing-board {
   display: flex;
 }
 
-.player-one-board,
-.computer-board {
+.memory-board {
   display: grid;
   grid-template-columns: repeat(6, 50px);
   grid-template-rows: repeat(6, 50px);
+}
+
+a {
+  text-decoration: none;
 }
