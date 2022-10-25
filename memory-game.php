@@ -29,7 +29,7 @@ require(__DIR__ . "./functions.php")
                     <div class="grid-board">
                         <?php
 
-                        $themeChosen = $themeHitman;
+                        $themeChosen = $themePokemon;
 
                         $difficultyChosen = "hard";
 
@@ -41,8 +41,8 @@ require(__DIR__ . "./functions.php")
                         ?>
                             <div class="memory-card">
                                 <img src="<?php echo $image['img'] ?>" alt="<?php echo $image['name'] ?>">
-                                <!-- <img src="<?php echo $image['img'] ?>" alt="<?php echo $image['name'] ?>"> -->
                             </div>
+                            <!-- <div class="back-of-card"></div> -->
                         <?php
                         }
 

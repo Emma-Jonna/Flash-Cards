@@ -38,6 +38,7 @@ foreach ($memoryPairs as $image) {
 
 function shortenThemeArrayByDifficulty(array $theme, string $difficulty): array
 {
+    //https://www.w3schools.com/php/func_array_slice.asp
 
     if ($difficulty === "easy") {
         $themeEasy = array_slice($theme, 0, 6);
@@ -53,8 +54,10 @@ function shortenThemeArrayByDifficulty(array $theme, string $difficulty): array
 
 function mergeAndshuffleArray(array $cards)
 {
+    //https://stackoverflow.com/questions/8234899/php-duplicate-values-in-an-array
     $cardsDoubbled = array_merge($cards, $cards);
 
+    //https://www.w3schools.com/php/func_array_shuffle.asp
     shuffle($cardsDoubbled);
 
     return $cardsDoubbled;
