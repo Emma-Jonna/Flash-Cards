@@ -24,12 +24,15 @@ require(__DIR__ . "./memory-cards.php");
         <div class="difficulty-buttons">
             <button class="easy">
                 <a href="memory-game.php">Easy</a>
+                <?php $difficultyChosen = "easy" ?>
             </button>
             <button class="medium">
                 <a href="memory-game.php">Medium</a>
+                <?php $difficultyChosen = "medium" ?>
             </button>
             <button class="hard">
                 <a href="memory-game.php">Hard</a>
+                <?php $difficultyChosen = "hard" ?>
             </button>
         </div>
 

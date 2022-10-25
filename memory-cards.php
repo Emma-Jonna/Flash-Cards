@@ -42,6 +42,7 @@ $themeHitman = [
     ['img' => 'images/hitman/Muffin.jpeg', 'name' => 'a muffin']
 ];
 
+
 $themeFireEmblem = [
     ['img' => 'images/fire-emblem/Chrom.png', 'name' => 'Chrom'],
     ['img' => 'images/fire-emblem/Robin F.png', 'name' => 'female Robin'],
@@ -60,6 +61,10 @@ $themeFireEmblem = [
     ['img' => 'images/fire-emblem/Flavia.png', 'name' => 'Flavia']
 ];
 
+$themeFireEmblemPairs = array_merge($themeFireEmblem, $themeFireEmblem);
+
+shuffle($themeFireEmblemPairs);
+
 $themePokemon = [
     ['img' => 'images/pokemon/Infernape.png', 'name' => 'Infernape'],
     ['img' => 'images/pokemon/Luxray.png', 'name' => 'Luxray'],
@@ -77,6 +82,10 @@ $themePokemon = [
     ['img' => 'images/pokemon/Crobat.png', 'name' => 'Crobat'],
     ['img' => 'images/pokemon/Altaria.png', 'name' => 'Altaria']
 ];
+
+$themePokemonPairs = array_merge($themePokemon, $themePokemon);
+
+shuffle($themePokemonPairs);
 
 
 /* foreach ($themePokemon as $image) {

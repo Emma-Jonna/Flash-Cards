@@ -1,7 +1,8 @@
 <?php
 
-/* require(__DIR__ . "./memory-cards.php");
-require(__DIR__ . "./difficulty.php"); */
+require(__DIR__ . "./memory-cards.php");
+require(__DIR__ . "./functions.php")
+/*require(__DIR__ . "./difficulty.php"); */
 ?>
 
 <!DOCTYPE html>
@@ -26,15 +27,26 @@ require(__DIR__ . "./difficulty.php"); */
 
                 <div class="memory-board">
                     <div class="grid-board">
-                        <!-- <?php
-                                foreach ($themeChosen as $image) {
-                                ?>
-                    <img src="<?php echo $image['img'] ?>" alt="<?php echo $image['name'] ?>">
-                    <img src="<?php echo $image['img'] ?>" alt="<?php echo $image['name'] ?>">
-                <?php
-                                }
+                        <?php
 
-                ?> -->
+                        $themeChosen = $themeHitman;
+
+                        $difficultyChosen = "hard";
+
+                        $difficultyAndTheme = shortenThemeArrayByDifficulty($themeChosen, $difficultyChosen);
+
+                        $memoryPairs = mergeAndshuffleArray($difficultyAndTheme);
+
+                        foreach ($memoryPairs as $image) {
+                        ?>
+                            <div class="memory-card">
+                                <img src="<?php echo $image['img'] ?>" alt="<?php echo $image['name'] ?>">
+                                <!-- <img src="<?php echo $image['img'] ?>" alt="<?php echo $image['name'] ?>"> -->
+                            </div>
+                        <?php
+                        }
+
+                        ?>
                     </div>
                 </div>
 
