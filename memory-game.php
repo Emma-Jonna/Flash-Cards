@@ -21,38 +21,36 @@ require(__DIR__ . "./functions.php")
 
     </header>
     <main>
+        <section class="flash-cards-board">
+            <?php
 
-        <?php
+            $themeChosen = $themeFireEmblem;
 
-        $themeChosen = $themePokemon;
+            $difficultyChosen = "hard";
 
-        $difficultyChosen = "hard";
+            $difficultyAndTheme = shortenThemeArrayByDifficulty($themeChosen, $difficultyChosen);
 
-        $difficultyAndTheme = shortenThemeArrayByDifficulty($themeChosen, $difficultyChosen);
+            $memoryPairs = ShuffleCards($difficultyAndTheme);
 
-        $memoryPairs = ShuffleCards($difficultyAndTheme);
+            foreach ($memoryPairs as $image) {
+            ?>
 
-        foreach ($memoryPairs as $image) {
-        ?>
-
-            <section class="flash-cards">
-                <section class="flash-card">
-                    <div class="flash-card-inner">
-                        <div class="back-of-card">
-                            <p>hello</p>
+                <section class="flash-cards">
+                    <section class="flash-card">
+                        <div class="flash-card-inner">
+                            <div class="back-of-card">
+                                <p><?php echo $image['name']; ?></p>
+                            </div>
+                            <div class="front-of-card">
+                                <img src="<?php echo $image['img'] ?>" alt="<?php echo $image['name'] ?>">
+                            </div>
                         </div>
-                        <div class="front-of-card">
-                            <img src="<?php echo $image['img'] ?>" alt="<?php echo $image['name'] ?>">
-                        </div>
-                    </div>
+                    </section>
                 </section>
-            </section>
-        <?php
-        }
-
-        ?>
-
-
+            <?php
+            }
+            ?>
+        </section>
 
         <section class="choice-buttons">
             <button class="back-to-start">

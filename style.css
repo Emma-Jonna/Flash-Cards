@@ -29,6 +29,7 @@ a {
   text-decoration: none;
   color: var(--font-color);
   font-size: 24px;
+  text-align: center;
 }
 
 h1 {
@@ -43,12 +44,6 @@ h3 {
 h1,
 h2 {
   margin-top: 70px;
-}
-
-button a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 button {
@@ -76,6 +71,10 @@ button {
 .start-button {
   margin-top: 100px;
 }
+
+/* .choice-buttons {
+  position: fixed;
+} */
 
 .difficulty-buttons,
 .theme-buttons,
@@ -129,11 +128,15 @@ button {
   display: inline-block;
 }
 
+.flash-cards-board {
+  width: 800px;
+}
+
 .flash-card {
   position: relative;
   width: 150px;
   height: 150px;
-  /* background-color: var(--you-win); */
+  border-radius: 10px;
 }
 
 .flash-card-inner {
@@ -142,6 +145,7 @@ button {
   height: 100%;
   transform-style: preserve-3d;
   transition: all 0.5s ease;
+  border-radius: 10px;
 }
 
 .flash-card:hover .flash-card-inner {
@@ -153,7 +157,8 @@ button {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  background-color: var(--you-win);
+  border-radius: 10px;
+  /* background-color: var(--you-win); */
 }
 
 .back-of-card {
@@ -163,6 +168,7 @@ button {
   backface-visibility: hidden;
   background-color: var(--you-lose);
   transform: rotateY(180deg);
+  border-radius: 10px;
 }
 
 /* .flash-card {
@@ -196,6 +202,7 @@ button {
   object-position: top;
   width: 100%;
   height: 100%;
+  border-radius: 10px;
   /* background-color: var(--memory-card-color); */
   /* position: absolute; */
 }

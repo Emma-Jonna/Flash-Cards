@@ -36,7 +36,6 @@ function shortenThemeArrayByDifficulty(array $theme, string $difficulty): array
 
 function ShuffleCards(array $cards)
 {
-
     //https://www.w3schools.com/php/func_array_shuffle.asp
     shuffle($cards);
 
