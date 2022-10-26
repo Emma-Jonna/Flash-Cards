@@ -125,15 +125,45 @@ button {
   background-color: var(--hard-button-color);
 }
 
-/* .flash-cards {
-  width: 580px;
-  height: 480px;
-} */
+.flash-cards {
+  display: inline-block;
+}
 
-/* .flash-cards {
-  width: 800px;
-  height: 800px;
-} */
+.flash-card {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  /* background-color: var(--you-win); */
+}
+
+.flash-card-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+
+.flash-card:hover .flash-card-inner {
+  transform: rotateY(180deg);
+}
+
+.front-of-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: var(--you-win);
+}
+
+.back-of-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: var(--you-lose);
+  transform: rotateY(180deg);
+}
 
 /* .flash-card {
   /* display: grid; */
@@ -160,7 +190,7 @@ button {
   height: 80px;
 } */
 
-.memory-card img {
+.front-of-card img {
   /* object-fit: contain; */
   object-fit: cover;
   object-position: top;

@@ -93,3 +93,29 @@ shuffle($themePokemonPairs);
     <img src="<?php echo $image['img'] ?>" alt="<?php echo $image['name'] ?>">
 <?php
 } */
+/* ?>
+
+<?php
+
+$themeChosen = $themePokemon;
+
+$difficultyChosen = "hard";
+
+$difficultyAndTheme = shortenThemeArrayByDifficulty($themeChosen, $difficultyChosen);
+
+$memoryPairs = ShuffleCards($difficultyAndTheme);
+
+foreach ($memoryPairs as $image) {
+?>
+    <div class="flash-card-inner">
+        <div class="back-of-card">
+            <p></p>
+        </div>
+        <div class="front-of-card">
+            <img src="<?php echo $image['img'] ?>" alt="<?php echo $image['name'] ?>">
+        </div>
+    </div>
+<?php
+}
+
+?> */

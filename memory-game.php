@@ -22,32 +22,37 @@ require(__DIR__ . "./functions.php")
     </header>
     <main>
 
-        <section class="flash-cards">
-            <?php
+        <?php
 
-            $themeChosen = $themePokemon;
+        $themeChosen = $themePokemon;
 
-            $difficultyChosen = "hard";
+        $difficultyChosen = "hard";
 
-            $difficultyAndTheme = shortenThemeArrayByDifficulty($themeChosen, $difficultyChosen);
+        $difficultyAndTheme = shortenThemeArrayByDifficulty($themeChosen, $difficultyChosen);
 
-            $memoryPairs = ShuffleCards($difficultyAndTheme);
+        $memoryPairs = ShuffleCards($difficultyAndTheme);
 
-            foreach ($memoryPairs as $image) {
-            ?>
-                <div class="flash-card">
-                    <div class="back-of-card">
-                        <p></p>
+        foreach ($memoryPairs as $image) {
+        ?>
+
+            <section class="flash-cards">
+                <section class="flash-card">
+                    <div class="flash-card-inner">
+                        <div class="back-of-card">
+                            <p>hello</p>
+                        </div>
+                        <div class="front-of-card">
+                            <img src="<?php echo $image['img'] ?>" alt="<?php echo $image['name'] ?>">
+                        </div>
                     </div>
-                    <div class="front-of-card">
-                        <img src="<?php echo $image['img'] ?>" alt="<?php echo $image['name'] ?>">
-                    </div>
-                </div>
-            <?php
-            }
+                </section>
+            </section>
+        <?php
+        }
 
-            ?>
-        </section>
+        ?>
+
+
 
         <section class="choice-buttons">
             <button class="back-to-start">
