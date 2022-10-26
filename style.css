@@ -31,12 +31,6 @@ a {
   font-size: 24px;
 }
 
-.back-to-start a,
-.play-again a,
-.submit a {
-  font-size: 18px;
-}
-
 h1 {
   font-size: 100px;
 }
@@ -59,57 +53,48 @@ button a {
 
 button {
   border: 2px solid var(--button-border);
+  border-radius: 10px;
 }
 
 .memories-title,
 .theme-title,
 .difficulty-title,
-.back-button {
+.start-button,
+.button-container,
+.choice-buttons {
   display: flex;
   justify-content: center;
 }
 
-.start-button,
-.theme-buttons,
-.difficulty-buttons {
-  display: flex;
-  justify-content: center;
+.button-container {
+  flex-direction: column;
   align-items: center;
+  gap: 60px;
+  margin-top: 50px;
+}
+
+.start-button {
+  margin-top: 100px;
+}
+
+.difficulty-buttons,
+.theme-buttons,
+.choice-buttons {
+  display: flex;
   gap: 100px;
 }
 
 .start-button button,
-.back-button button,
-.back-to-start,
-.play-again,
-.submit {
+.choice-buttons button,
+.back {
   width: 150px;
-  height: 60px;
-  border-radius: 10px;
+  height: 65px;
 }
 
 .theme-buttons button,
 .difficulty-buttons button {
   width: 175px;
   height: 100px;
-}
-
-.choice-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-}
-
-.back-to-start,
-.play-again,
-.submit {
-  margin-top: 40px;
-}
-
-.back-button button,
-.start-button button {
-  margin-top: 80px;
-  background-color: var(--memory-card-color);
 }
 
 .easy,
@@ -122,112 +107,58 @@ button {
   margin-top: 60px;
 }
 
-.score-screen {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  margin-top: 70px;
-}
-
-.score-section,
-.highscore-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.highscore-section,
-.score-section {
-  background-color: var(--medium-button-color);
-  border: 2px solid var(--button-border);
-  border-radius: 10px;
-  width: 600px;
-  height: 500px;
-}
-
 .easy,
 .hitman,
-.submit {
+.back-to-start {
   background-color: var(--easy-button-color);
 }
 
 .medium,
 .fire-emblem,
-.back-to-start {
+.shuffle-cards {
   background-color: var(--medium-button-color);
 }
 
 .hard,
 .pokemon,
-.play-again {
+.back {
   background-color: var(--hard-button-color);
 }
 
-.game-screen {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.playing-board {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  margin-top: 70px;
-  width: 680;
-  height: 600px;
-}
-
-.memory-board {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* .flash-cards {
   width: 580px;
   height: 480px;
-}
+} */
 
-.grid-board {
-  display: grid;
-  /* grid-template-columns: repeat(4, 80px);
+/* .flash-cards {
+  width: 800px;
+  height: 800px;
+} */
+
+/* .flash-card {
+  /* display: grid; */
+/* grid-template-columns: repeat(4, 80px);
   grid-template-rows: repeat(3, 80px); */
-  /* grid-template-columns: repeat(4, 80px);
+/* grid-template-columns: repeat(4, 80px);
   grid-template-rows: repeat(5, 80px); */
-  grid-template-columns: repeat(6, 80px);
+/* grid-template-columns: repeat(6, 80px);
   grid-template-rows: repeat(5, 80px);
   background-color: var(--button-border);
-  gap: 20px;
-}
-
-.information {
-  width: 200px;
-  font-size: 24px;
-  color: var(--font-color);
-  text-align: left;
-  padding-left: 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.win-or-lose ol {
-  width: 300px;
-  text-align: left;
-}
-
-.win-or-lose li {
-  padding-left: 10px;
-}
-
-.memory-card {
   width: 80px;
   height: 80px;
+  display: inline-block;
+} */
+
+/* .front-of-card {
   position: relative;
-}
+  width: 80px;
+  height: 80px;
+} */
+
+/* .memory-card {
+  width: 80px;
+  height: 80px;
+} */
 
 .memory-card img {
   /* object-fit: contain; */
@@ -235,10 +166,6 @@ button {
   object-position: top;
   width: 100%;
   height: 100%;
-}
-
-.back-of-card {
-  width: 80px;
-  height: 80px;
-  background-color: var(--memory-card-color);
+  /* background-color: var(--memory-card-color); */
+  /* position: absolute; */
 }

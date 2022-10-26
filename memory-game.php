@@ -22,54 +22,44 @@ require(__DIR__ . "./functions.php")
     </header>
     <main>
 
-        <section class="game-screen">
-            <section class="playing-board">
+        <section class="flash-cards">
+            <?php
 
-                <div class="memory-board">
-                    <div class="grid-board">
-                        <?php
+            $themeChosen = $themePokemon;
 
-                        $themeChosen = $themePokemon;
+            $difficultyChosen = "hard";
 
-                        $difficultyChosen = "hard";
+            $difficultyAndTheme = shortenThemeArrayByDifficulty($themeChosen, $difficultyChosen);
 
-                        $difficultyAndTheme = shortenThemeArrayByDifficulty($themeChosen, $difficultyChosen);
+            $memoryPairs = ShuffleCards($difficultyAndTheme);
 
-                        $memoryPairs = mergeAndshuffleArray($difficultyAndTheme);
-
-                        foreach ($memoryPairs as $image) {
-                        ?>
-                            <div class="memory-card">
-                                <img src="<?php echo $image['img'] ?>" alt="<?php echo $image['name'] ?>">
-                            </div>
-                            <!-- <div class="back-of-card"></div> -->
-                        <?php
-                        }
-
-                        ?>
+            foreach ($memoryPairs as $image) {
+            ?>
+                <div class="flash-card">
+                    <div class="back-of-card">
+                        <p></p>
+                    </div>
+                    <div class="front-of-card">
+                        <img src="<?php echo $image['img'] ?>" alt="<?php echo $image['name'] ?>">
                     </div>
                 </div>
+            <?php
+            }
 
-                <div class="information">
-                    <div class="time">
-                        <p>Time left:</p>
-                        <p>1:30</p>
-                    </div>
-                    <div class="pair-left">
-                        <p>Pairs left:</p>
-                        <p>4</p>
-                    </div>
-                    <div class="score">
-                        <p>Score:</p>
-                        <p>03259045</p>
-                    </div>
-                </div>
-            </section>
+            ?>
         </section>
 
-
-        <a href="score-screen.php">final score</a>
-        <a href="difficulty.php">back</a>
+        <section class="choice-buttons">
+            <button class="back-to-start">
+                <a href="index.php">Back to start</a>
+            </button>
+            <button class="shuffle-cards">
+                <a href="">Shuffle cards</a>
+            </button>
+            <button class="back">
+                <a href="difficulty.php">back</a>
+            </button>
+        </section>
     </main>
 
 </body>
