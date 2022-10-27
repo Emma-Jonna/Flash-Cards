@@ -1,6 +1,7 @@
 <?php
 
 require(__DIR__ . "./memory-cards.php");
+require(__DIR__ . "./functions.php");
 ?>
 
 <!DOCTYPE html>
@@ -21,11 +22,19 @@ require(__DIR__ . "./memory-cards.php");
         </div>
     </header>
     <main>
-        <div class="start-button">
-            <button>
-                <a href="theme.php">Start</a>
-            </button>
-        </div>
+
+        <section class="gif-and-startbtton">
+
+            <div class="gif">
+                <img src="<?php echo $startpageGifs[randomGif($startpageGifs)] ?>" alt="">
+            </div>
+
+            <div class="start-button">
+                <button>
+                    <a href="theme.php">Start</a>
+                </button>
+            </div>
+        </section>
 
     </main>
 

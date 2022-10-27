@@ -34,6 +34,16 @@ function shortenThemeArrayByDifficulty(array $theme, string $difficulty): array
     }
 }
 
+function randomGif(array $gifs)
+{
+
+    $randomGifKey = rand(0, count($gifs) - 1);
+
+    // echo $randomGifKey;
+
+    return $randomGifKey;
+}
+
 function ShuffleCards(array $cards)
 {
     //https://www.w3schools.com/php/func_array_shuffle.asp

@@ -57,7 +57,7 @@ require(__DIR__ . "./functions.php")
                 <a href="index.php">Back to start</a>
             </button>
             <button class="shuffle-cards">
-                <a href="">Shuffle cards</a>
+                <a href="memory-game.php">Shuffle cards</a>
             </button>
             <button class="back">
                 <a href="difficulty.php">back</a>

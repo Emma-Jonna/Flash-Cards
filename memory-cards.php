@@ -22,7 +22,7 @@ $memoryMapHard = [
     [0, 0, 0, 0, 0, 0]
 ];
 
-$startpageGifs = ['', '',];
+$startpageGifs = ['https://media0.giphy.com/media/3oz8xyB3C126ZDDAuk/giphy.gif', 'https://media1.giphy.com/media/3oz8xG0aignBvOhIMU/giphy.gif?cid=790b761100bd40252499e98c55b3a9be1a2f4ca2f146eceb&rid=giphy.gif&ct=g', 'https://media4.giphy.com/media/FPjbHO0jJxGsE/giphy.gif?cid=790b7611cbeb8f448c9c4d9a4190f38cbdb514b90f6b3eab&rid=giphy.gif&ct=g', 'https://media0.giphy.com/media/374pcIBVEGb6g/giphy.gif?cid=790b7611fd2e4bde6424b2536f1ee9b341b306756d77e3d3&rid=giphy.gif&ct=g', 'https://media3.giphy.com/media/jSWioe9kzaiMyjx9Km/giphy.gif?cid=790b7611cff772100c495438482e91c8376f18f99545612a&rid=giphy.gif&ct=g', 'https://media2.giphy.com/media/l4FGBYUAKXu5rCN9K/giphy.gif?cid=790b76119c69f06ef7c214e7e88a7395a458d4e176967f9e&rid=giphy.gif&ct=g'];
 
 $themeHitman = [
     ['img' => 'images/hitman/47.jpg', 'name' => 'agent 47', 'title' => '', 'description' => ''],
