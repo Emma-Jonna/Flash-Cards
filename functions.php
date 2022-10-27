@@ -1,22 +1,27 @@
 <?php
 
+declare(strict_types=1);
+
 require(__DIR__ . "./memory-cards.php");
-
-/* $hitmanEasy = array_slice($themeHitman, 0, 6);
-
-$hitmanMedium = array_slice($themeHitman, 0, 10);
-
-$hitmanHard = array_slice($themeHitman, 0, 15); */
 
 // print_r(shortenArrayByDifficulty($themeHitman, "hard"));
 
 // print_r(ShuffleCards(shortenArrayByDifficulty($themeHitman, "hard")));
 
-// $themeChosen = $themePokemon;
+// $difficultyAndTheme = shortenThemeArrayByDifficulty($themeChosen, $difficultyChosen);
 
-/* $difficultyChosen = "easy";
+function difficultyMap(array $arrayMap)
+{
 
-$difficultyAndTheme = shortenThemeArrayByDifficulty($themeChosen, $difficultyChosen); */
+    foreach ($arrayMap as $row) {
+
+        foreach ($row as $block) {
+            /* <!-- <div class="easy-block"><?php echo $block; ?></div> --> */
+            return $block;
+        }
+        // echo "<br>";
+    }
+}
 
 function shortenThemeArrayByDifficulty(array $theme, string $difficulty): array
 {
@@ -34,17 +39,15 @@ function shortenThemeArrayByDifficulty(array $theme, string $difficulty): array
     }
 }
 
-function randomGif(array $gifs)
+function randomGif(array $gifs): int
 {
 
     $randomGifKey = rand(0, count($gifs) - 1);
 
-    // echo $randomGifKey;
-
     return $randomGifKey;
 }
 
-function ShuffleCards(array $cards)
+function ShuffleCards(array $cards): array
 {
     //https://www.w3schools.com/php/func_array_shuffle.asp
     shuffle($cards);

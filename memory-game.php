@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 require(__DIR__ . "./memory-cards.php");
 require(__DIR__ . "./functions.php");
 require(__DIR__ . "./header.php");
@@ -12,9 +14,13 @@ require(__DIR__ . "./header.php");
     <section class="flash-cards-board">
         <?php
 
-        $themeChosen = $themeFireEmblem;
+        $themeChosen = $themeHitman;
+
+        // $themeChosen = $theme;
 
         $difficultyChosen = "hard";
+
+        // $difficultyChosen = $difficulty;
 
         $difficultyAndTheme = shortenThemeArrayByDifficulty($themeChosen, $difficultyChosen);
 
@@ -27,7 +33,7 @@ require(__DIR__ . "./header.php");
                 <section class="flash-card">
                     <div class="flash-card-inner">
                         <div class="back-of-card">
-                            <p><?php echo $image['name']; ?></p>
+                            <p><?php echo $image['title'] .  "<br>" . $image['description']; ?></p>
                         </div>
                         <div class="front-of-card">
                             <img src="<?php echo $image['img'] ?>" alt="<?php echo $image['name'] ?>">
@@ -41,15 +47,24 @@ require(__DIR__ . "./header.php");
     </section>
 
     <section class="choice-buttons">
-        <button class="back-to-start">
-            <a href="index.php">Back to start</a>
-        </button>
-        <button class="shuffle-cards">
-            <a href="memory-game.php">Shuffle cards</a>
-        </button>
-        <button class="back">
-            <a href="difficulty.php">back</a>
-        </button>
+
+        <form action="index.php">
+            <button class="back-to-start">
+                <a href="index.php">Back to start</a>
+            </button>
+        </form>
+
+        <form action="memory-game.php">
+            <button class="shuffle-cards">
+                <a href="memory-game.php">Shuffle cards</a>
+            </button>
+        </form>
+
+        <form action="difficulty.php">
+            <button class="back">
+                <a href="difficulty.php">back</a>
+            </button>
+        </form>
     </section>
 
     <?php

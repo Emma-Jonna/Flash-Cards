@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 require(__DIR__ . "./memory-cards.php");
 require(__DIR__ . "./functions.php");
 require(__DIR__ . "./header.php");
@@ -18,11 +20,14 @@ require(__DIR__ . "./header.php");
             <img src="<?php echo $startpageGifs[randomGif($startpageGifs)] ?>" alt="">
         </div>
 
-        <div class="start-button">
-            <button>
-                <a href="theme.php">Start</a>
-            </button>
-        </div>
+        <form action="theme.php">
+            <div class="start-button">
+                <button>
+                    <a href="theme.php">Start</a>
+                </button>
+            </div>
+        </form>
+
     </section>
 
     <?php

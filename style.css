@@ -5,8 +5,9 @@
   --easy-button-color: #f5e6e1;
   --medium-button-color: #aecfea;
   --hard-button-color: #b78fa2;
-  --you-win: #5aeb66;
-  --you-lose: #eb5a5a;
+  --back-button: #5aeb66;
+  --start-button: #eb5a5a;
+  --shuffle-button: green;
   --button-border: #573846;
 }
 
@@ -71,10 +72,6 @@ button {
 .start-button {
   margin-top: 100px;
 }
-
-/* .choice-buttons {
-  position: fixed;
-} */
 
 .difficulty-buttons,
 .theme-buttons,
@@ -173,7 +170,7 @@ button {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  background-color: var(--you-lose);
+  background-color: var(--memory-card-color);
   transform: rotateY(180deg);
   border-radius: 10px;
 }
@@ -216,3 +213,29 @@ button {
 .gif-and-startbtton img {
   width: 100%;
 }
+
+/* .difficuly-visual-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  justify-content: center;
+} */
+
+/* .easy-map .block {
+  background-color: #573846;
+} */
+
+/* .easy-map,
+.medium-map,
+.hard-map {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  justify-content: center;
+} */
+
+/* .block {
+  width: 10px;
+  height: 10px;
+  background-color: #5aeb66;
+} */

@@ -1,7 +1,10 @@
 <?php
 
+declare(strict_types=1);
+
 require(__DIR__ . "./memory-cards.php");
 require(__DIR__ . "./header.php");
+// require(__DIR__ . "./GET.php");
 
 ?>
 <header>
@@ -11,31 +14,34 @@ require(__DIR__ . "./header.php");
 </header>
 <main>
     <section class="button-container">
+
         <div class="theme-buttons">
-            <button class="hitman">
-                <a href="difficulty.php">Hitman</a>
 
-                <?php $themeChosen = $themeHitman ?>
+            <form action="difficulty.php" method="GET">
+                <button class="hitman" name="hitman">
+                    <a href="difficulty.php">Hitman</a>
+                </button>
+            </form>
 
-            </button>
-            <button class="fire-emblem">
-                <a href="difficulty.php">Fire Emblem</a>
+            <form action="difficulty.php" method="GET">
+                <button class="fire-emblem" name="fire-emblem">
+                    <a href="difficulty.php">Fire Emblem</a>
+                </button>
+            </form>
 
-                <?php $themeChosen = $themeFireEmblem ?>
+            <form action="difficulty.php" method="GET">
+                <button class="pokemon" name="pokemon">
+                    <a href="difficulty.php">Pokemon</a>
+                </button>
+            </form>
 
-            </button>
-            <button class="pokemon">
-                <a href="difficulty.php">Pokemon</a>
-
-                <?php $themeChosen = $themePokemon ?>
-
-            </button>
         </div>
-        <div class="back-button">
+
+        <form action="index.php">
             <button class="back">
                 <a href="index.php">Back</a>
             </button>
-        </div>
+        </form>
     </section>
 
     <?php
