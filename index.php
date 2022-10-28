@@ -2,34 +2,48 @@
 
 declare(strict_types=1);
 
-require(__DIR__ . "./memory-cards.php");
-require(__DIR__ . "./functions.php");
-require(__DIR__ . "./header.php");
+require("./memory-cards.php");
+require("./functions.php");
+require("./header.php");
 ?>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Flash Cards</title>
+</head>
 
-<div class="memories-title">
-    <h1>Memories</h1>
-</div>
-</header>
-<main>
+<body>
+    <header>
 
-    <section class="gif-and-startbtton">
-
-        <div class="gif">
-            <img src="<?php echo $startpageGifs[randomGif($startpageGifs)] ?>" alt="">
+        <div class="memories-title">
+            <h1>Memories</h1>
         </div>
+    </header>
+    <main>
 
-        <form action="theme.php">
-            <div class="start-button">
-                <button>
-                    <a href="theme.php">Start</a>
-                </button>
+        <section class="gif-and-startbtton">
+
+            <div class="gif">
+                <img src="<?php echo $startpageGifs[randomGif($startpageGifs)] ?>" alt="">
             </div>
-        </form>
 
-    </section>
+            <form action="theme.php">
+                <div class="start-button">
+                    <button>
+                        <a href="theme.php">Start</a>
+                    </button>
+                </div>
+            </form>
 
-    <?php
+        </section>
 
-    require(__DIR__ . "./footer.php");
+    </main>
+
+</body>
+
+</html>

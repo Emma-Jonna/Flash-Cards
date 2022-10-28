@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-require(__DIR__ . "./memory-cards.php");
-require(__DIR__ . "./functions.php");
-require(__DIR__ . "./header.php");
-/*require(__DIR__ . "./difficulty.php"); */
+require("./memory-cards.php");
+require("./functions.php");
+require("./header.php");
+// require("./difficulty.php");
 ?>
 <header>
 
@@ -69,4 +69,4 @@ require(__DIR__ . "./header.php");
 
     <?php
 
-    require(__DIR__ . "./footer.php");
+    require("./footer.php");

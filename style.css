@@ -214,12 +214,43 @@ button {
   width: 100%;
 }
 
-/* .difficuly-visual-cards {
+.difficuly-visual-cards {
   display: flex;
   flex-direction: row;
-  gap: 100px;
+  gap: 150px;
   justify-content: center;
-} */
+}
+
+.easy-map-container,
+.medium-map-container,
+.hard-map-container {
+  display: flex;
+}
+
+.easy-map-container {
+  width: 60px;
+  /* height: 60px; */
+  flex-wrap: wrap;
+}
+.medium-map-container {
+  width: 100px;
+  /* height: 60px; */
+  flex-wrap: wrap;
+}
+
+.hard-map-container {
+  width: 100px;
+  /* height: 60px; */
+  flex-wrap: wrap;
+}
+
+.easy-map,
+.medium-map,
+.hard-map {
+  width: 20px;
+  height: 20px;
+  background-color: #573846;
+}
 
 /* .easy-map .block {
   background-color: #573846;

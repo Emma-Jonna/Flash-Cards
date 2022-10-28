@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-require(__DIR__ . "./memory-cards.php");
+require("./memory-cards.php");
 
 // print_r(shortenArrayByDifficulty($themeHitman, "hard"));
 
@@ -16,7 +16,9 @@ function difficultyMap(array $arrayMap)
     foreach ($arrayMap as $row) {
 
         foreach ($row as $block) {
-            /* <!-- <div class="easy-block"><?php echo $block; ?></div> --> */
+?>
+            <div><?php echo $block; ?></div>
+<?php
             return $block;
         }
         // echo "<br>";

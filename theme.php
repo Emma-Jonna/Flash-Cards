@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-require(__DIR__ . "./memory-cards.php");
-require(__DIR__ . "./header.php");
-// require(__DIR__ . "./GET.php");
+require("./memory-cards.php");
+require("./header.php");
+// require("./GET.php");
 
 ?>
 <header>
@@ -44,6 +44,8 @@ require(__DIR__ . "./header.php");
         </form>
     </section>
 
-    <?php
+</main>
 
-    require(__DIR__ . "./footer.php");
+</body>
+
+</html>

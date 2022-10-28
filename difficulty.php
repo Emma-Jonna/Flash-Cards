@@ -2,10 +2,11 @@
 
 declare(strict_types=1);
 
-require(__DIR__ . "./memory-cards.php");
-require(__DIR__ . "./header.php");
-require(__DIR__ . "./functions.php");
-// require(__DIR__ . "./GET.php");
+require("./memory-cards.php");
+require("./header.php");
+require("./functions.php");
+require("./memory-cards.php");
+// require("./GET.php");
 
 ?>
 <header>
@@ -15,13 +16,54 @@ require(__DIR__ . "./functions.php");
 </header>
 <main>
 
-    <!-- <section class="difficulty-maps">
+    <section class="difficulty-maps">
         <div class="difficuly-visual-cards">
-            <div class="easy-map"><?php difficultyMap($memoryMapEasy) ?></div>
-            <div class="medium-map"><?php difficultyMap($memoryMapMedium) ?></div>
-            <div class="hard-map"><?php difficultyMap($memoryMapHard) ?></div>
+
+            <div class="easy-map-container">
+                <?php
+
+                foreach ($memoryMapEasy as $row) {
+
+                    foreach ($row as $block) {
+                ?>
+                        <div class="easy-map"><?php echo $block ?></div>
+                <?php
+                    }
+                    // echo "<br>";
+                } ?>
+            </div>
+
+            <div class="medium-map-container">
+                <?php
+
+                foreach ($memoryMapMedium as $row) {
+
+                    foreach ($row as $block) {
+                ?>
+                        <!-- <div><?php echo $block; ?></div> -->
+                        <div class="medium-map"><?php echo $block ?></div>
+                <?php
+                    }
+                    // echo "<br>";
+                } ?>
+            </div>
+
+            <div class="hard-map-container">
+                <?php
+
+                foreach ($memoryMapHard as $row) {
+
+                    foreach ($row as $block) {
+                ?>
+                        <!-- <div><?php echo $block; ?></div> -->
+                        <div class="hard-map"><?php echo $block ?></div>
+                <?php
+                    }
+                    // echo "<br>";
+                } ?>
+            </div>
         </div>
-    </section> -->
+    </section>
 
     <section class="button-container">
 
@@ -60,4 +102,4 @@ require(__DIR__ . "./functions.php");
 
     <?php
 
-    require(__DIR__ . "./footer.php");
+    require("./footer.php");

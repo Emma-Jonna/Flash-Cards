@@ -22,7 +22,7 @@ $startpageGifs = ['https://media0.giphy.com/media/3oz8xyB3C126ZDDAuk/giphy.gif',
 
 $themeHitman = [
     ['img' => 'images/hitman/47.jpg', 'name' => 'agent 47', 'title' => 'Agent 47', 'description' => ''],
-    ['img' => 'images/hitman/Diana.jpg', 'name' => 'diana burnwood', 'title' => 'Diana Burnwood', 'description' => ''],
+    ['img' => 'images/hitman/Diana.jpg', 'name' => 'diana burnwood', 'title' => 'Diana Burnwood', 'description' => 'Working as 47 handeler and is one of the best characters'],
     ['img' => 'images/hitman/Lucas-Grey.jpeg', 'name' => 'lucas grey', 'title' => 'Lucas Grey', 'description' => ''],
     ['img' => 'images/hitman/Arthur-Edwards.jpeg', 'name' => 'arthur edwards', 'title' => 'Arthur Edwards', 'description' => ''],
     ['img' => 'images/hitman/Duck.jpeg', 'name' => 'a rubber duck', 'title' => 'Pale Duck', 'description' => ''],
@@ -34,8 +34,8 @@ $themeHitman = [
     ['img' => 'images/hitman/Coin.jpeg', 'name' => 'a coin', 'title' => 'Coin', 'description' => 'Great for distractions and brekaing glas'],
     ['img' => 'images/hitman/Briefcase.jpeg', 'name' => 'a briefcase', 'title' => 'Briefcase', 'description' => 'Great for carrying around'],
     ['img' => 'images/hitman/Lockpick.jpeg', 'name' => 'a lockpick', 'title' => 'Lockpick', 'description' => ''],
-    ['img' => 'images/hitman/Fish.jpeg', 'name' => 'a fish', 'title' => 'Fish', 'description' => 'The superior weapon to pacify people'],
-    ['img' => 'images/hitman/Muffin.jpeg', 'name' => 'a muffin', 'title' => 'Bluberry Muffin', 'description' => '']
+    ['img' => 'images/hitman/Fish.jpeg', 'name' => 'a fish', 'title' => 'Fish', 'description' => 'Clearly the superior weapon, just make sure to keep it nice and cold'],
+    ['img' => 'images/hitman/Muffin.jpeg', 'name' => 'a muffin', 'title' => 'Bluberry Muffin', 'description' => 'For when you run out of coins or just want a snack']
 ];
 
 $themeFireEmblem = [
