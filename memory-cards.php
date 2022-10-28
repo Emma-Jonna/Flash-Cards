@@ -27,7 +27,7 @@ $themeHitman = [
     ['img' => 'images/hitman/Arthur-Edwards.jpeg', 'name' => 'arthur edwards', 'title' => 'Arthur Edwards', 'description' => ''],
     ['img' => 'images/hitman/Duck.jpeg', 'name' => 'a rubber duck', 'title' => 'Pale Duck', 'description' => ''],
     ['img' => 'images/hitman/Symbol.jpg', 'name' => 'hitman logo', 'title' => 'Hitman Logo', 'description' => ''],
-    ['img' => 'images/hitman/47-promo.jpg', 'name' => 'agent 47', 'title' => 'Hitman 2', 'description' => ''],
+    ['img' => 'images/hitman/47-Promo.jpg', 'name' => 'agent 47', 'title' => 'Hitman 2', 'description' => ''],
     ['img' => 'images/hitman/Pistol.jpeg', 'name' => 'pistol', 'title' => 'Silent Pistol', 'description' => ''],
     ['img' => 'images/hitman/Poison.jpeg', 'name' => 'poison', 'title' => 'Lethal Poison', 'description' => ''],
     ['img' => 'images/hitman/Screwdriver.jpeg', 'name' => 'screwdriver', 'title' => 'Screwdriver', 'description' => 'It may seem harmless but is very effective'],

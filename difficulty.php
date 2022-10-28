@@ -21,46 +21,20 @@ require("./memory-cards.php");
 
             <div class="easy-map-container">
                 <?php
-
-                foreach ($memoryMapEasy as $row) {
-
-                    foreach ($row as $block) {
+                difficultyMap($memoryMapEasy);
                 ?>
-                        <div class="easy-map"><?php echo $block ?></div>
-                <?php
-                    }
-                    // echo "<br>";
-                } ?>
             </div>
 
             <div class="medium-map-container">
                 <?php
-
-                foreach ($memoryMapMedium as $row) {
-
-                    foreach ($row as $block) {
+                difficultyMap($memoryMapMedium);
                 ?>
-                        <!-- <div><?php echo $block; ?></div> -->
-                        <div class="medium-map"><?php echo $block ?></div>
-                <?php
-                    }
-                    // echo "<br>";
-                } ?>
             </div>
 
             <div class="hard-map-container">
                 <?php
-
-                foreach ($memoryMapHard as $row) {
-
-                    foreach ($row as $block) {
+                difficultyMap($memoryMapHard);
                 ?>
-                        <!-- <div><?php echo $block; ?></div> -->
-                        <div class="hard-map"><?php echo $block ?></div>
-                <?php
-                    }
-                    // echo "<br>";
-                } ?>
             </div>
         </div>
     </section>

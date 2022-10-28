@@ -44,8 +44,6 @@ require("./header.php");
         </form>
     </section>
 
-</main>
+    <?php
 
-</body>
-
-</html>
+    require("./footer.php");

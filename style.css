@@ -244,9 +244,9 @@ button {
   flex-wrap: wrap;
 }
 
-.easy-map,
-.medium-map,
-.hard-map {
+.easy-map-container div,
+.medium-map-container div,
+.hard-map-container div {
   width: 20px;
   height: 20px;
   background-color: #573846;

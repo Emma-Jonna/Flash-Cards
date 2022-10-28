@@ -10,18 +10,16 @@ require("./memory-cards.php");
 
 // $difficultyAndTheme = shortenThemeArrayByDifficulty($themeChosen, $difficultyChosen);
 
-function difficultyMap(array $arrayMap)
-{
 
-    foreach ($arrayMap as $row) {
+function difficultyMap(array $memoryMap)
+{
+    foreach ($memoryMap as $row) {
 
         foreach ($row as $block) {
 ?>
-            <div><?php echo $block; ?></div>
+            <div><?php echo $block ?></div>
 <?php
-            return $block;
         }
-        // echo "<br>";
     }
 }
 
@@ -43,7 +41,6 @@ function shortenThemeArrayByDifficulty(array $theme, string $difficulty): array
 
 function randomGif(array $gifs): int
 {
-
     $randomGifKey = rand(0, count($gifs) - 1);
 
     return $randomGifKey;
