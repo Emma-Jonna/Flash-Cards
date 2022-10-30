@@ -5,24 +5,37 @@ declare(strict_types=1);
 require("./memory-cards.php");
 require("./functions.php");
 require("./header.php");
-// require("./difficulty.php");
+
+$themeValue = $_GET['theme'];
+
+$difficultyValue = $_GET['difficulty'];
 ?>
 <header>
 
 </header>
 <main>
+
     <section class="flash-cards-board">
         <?php
 
-        $themeChosen = $themeHitman;
+        if ($themeValue === 'hitman') {
+            $themeChosen = $themeHitman;
+        } elseif ($themeValue === 'fire-emblem') {
+            $themeChosen = $themeFireEmblem;
+        } elseif ($themeValue === 'pokemon') {
+            $themeChosen = $themePokemon;
+        }
 
-        // $themeChosen = $theme;
 
-        $difficultyChosen = "hard";
+        if ($difficultyValue === 'hitman') {
+            $difficultyValue = $themeHitman;
+        } elseif ($difficultyValue === 'fire-emblem') {
+            $difficultyValue = $themeFireEmblem;
+        } elseif ($themeValue === 'pokemon') {
+            $difficultyValue = $themePokemon;
+        }
 
-        // $difficultyChosen = $difficulty;
-
-        $difficultyAndTheme = shortenThemeArrayByDifficulty($themeChosen, $difficultyChosen);
+        $difficultyAndTheme = shortenThemeArrayByDifficulty($themeChosen, $difficultyValue);
 
         $memoryPairs = ShuffleCards($difficultyAndTheme);
 
@@ -47,24 +60,8 @@ require("./header.php");
     </section>
 
     <section class="choice-buttons">
-
-        <form action="index.php">
-            <button class="back-to-start">
-                <a href="index.php">Back to start</a>
-            </button>
-        </form>
-
-        <form action="memory-game.php">
-            <button class="shuffle-cards">
-                <a href="memory-game.php">Shuffle cards</a>
-            </button>
-        </form>
-
-        <form action="difficulty.php">
-            <button class="back">
-                <a href="difficulty.php">back</a>
-            </button>
-        </form>
+        <a class="back-to-start" type="button" href="index.php">Back to start</a>
+        <a class="shuffle-cards" type="button" href="memory-game.php?theme=<?php echo $themeValue ?>&difficulty=<?php echo $difficultyValue ?>">Shuffle cards</a>
     </section>
 
     <?php

@@ -13,20 +13,11 @@ require("./header.php");
 </header>
 <main>
 
-    <section class="gif-and-startbtton">
-
+    <section class="gif-and-startbutton">
         <div class="gif">
             <img src="<?php echo $startpageGifs[randomGif($startpageGifs)] ?>" alt="">
         </div>
-
-        <form action="theme.php">
-            <div class="start-button">
-                <button>
-                    <a href="theme.php">Start</a>
-                </button>
-            </div>
-        </form>
-
+        <a class="start-button" type="button" href="theme.php">Start</a>
     </section>
 
     <?php

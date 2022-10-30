@@ -4,20 +4,14 @@ declare(strict_types=1);
 
 require("./memory-cards.php");
 
-// print_r(shortenArrayByDifficulty($themeHitman, "hard"));
-
-// print_r(ShuffleCards(shortenArrayByDifficulty($themeHitman, "hard")));
-
-// $difficultyAndTheme = shortenThemeArrayByDifficulty($themeChosen, $difficultyChosen);
-
-
 function difficultyMap(array $memoryMap)
 {
     foreach ($memoryMap as $row) {
 
         foreach ($row as $block) {
 ?>
-            <div><?php echo $block ?></div>
+            <!-- <div><?php echo $block ?></div> -->
+            <div></div>
 <?php
         }
     }

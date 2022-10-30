@@ -6,12 +6,12 @@ require("./memory-cards.php");
 require("./header.php");
 require("./functions.php");
 require("./memory-cards.php");
-// require("./GET.php");
 
+$themeValue = $_GET['theme'];
 ?>
 <header>
     <div class="difficulty-title">
-        <h2>Chose the difficulty</h2>
+        <h2>Chose amount of cards</h2>
     </div>
 </header>
 <main>
@@ -39,39 +39,10 @@ require("./memory-cards.php");
         </div>
     </section>
 
-    <section class="button-container">
-
-        <div class="difficulty-buttons">
-
-            <form action="memory-game.php" method="GET">
-                <button class="easy" name="easy">
-                    <a href="memory-game.php">Easy</a>
-                    <?php $difficultyChosen = "easy" ?>
-                </button>
-            </form>
-
-            <form action="memory-game.php" method="GET">
-                <button class="medium" name="medium">
-                    <a href="memory-game.php">Medium</a>
-                    <?php $difficultyChosen = "medium" ?>
-                </button>
-            </form>
-
-            <form action="memory-game.php" method="GET">
-                <button class="hard" name="hard">
-                    <a href="memory-game.php">Hard</a>
-                    <?php $difficultyChosen = "hard" ?>
-                </button>
-            </form>
-
-        </div>
-
-        <form action="theme.php">
-            <button class="back">
-                <a href="theme.php">Back</a>
-            </button>
-        </form>
-
+    <section class="difficulty-buttons">
+        <a class="easy" href="memory-game.php?theme=<?php echo $themeValue ?>&difficulty=easy" type="button">Six</a>
+        <a class="medium" href="memory-game.php?theme=<?php echo $themeValue ?>&difficulty=medium" type="button">Ten</a>
+        <a class="hard" href="memory-game.php?theme=<?php echo $themeValue ?>&difficulty=hard">Fifteen</a>
     </section>
 
     <?php
