@@ -1,14 +1,14 @@
 :root {
-  --background-color: #ffffff;
-  --font-color: #000000;
-  --memory-card-color: #a6c9a9;
-  --easy-button-color: #f5e6e1;
-  --medium-button-color: #aecfea;
-  --hard-button-color: #b78fa2;
-  --back-button: #5aeb66;
-  --start-button: #eb5a5a;
-  --shuffle-button: green;
-  --button-border: #573846;
+  --background-color: #f7ede2;
+  --font-color: #2a2d34;
+  --memory-card-color: #b3e9c7;
+  --easy-button-color: #b49fcc;
+  --medium-button-color: #dfbbb1;
+  --hard-button-color: #f56476;
+  --back-to-start: #15616d;
+  --start-button: #9ece9a;
+  --shuffle-button: #ca6875;
+  --button-border: #450920;
 }
 
 @font-face {
@@ -126,6 +126,10 @@ button,
 .pokemon,
 .back {
   background-color: var(--hard-button-color);
+}
+
+.start-button {
+  background-color: var(--start-button);
 }
 
 .flash-cards {

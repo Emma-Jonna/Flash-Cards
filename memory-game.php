@@ -31,7 +31,7 @@ $difficultyValue = $_GET['difficulty'];
             $difficultyValue = $themeHitman;
         } elseif ($difficultyValue === 'fire-emblem') {
             $difficultyValue = $themeFireEmblem;
-        } elseif ($themeValue === 'pokemon') {
+        } elseif ($difficultyValue === 'pokemon') {
             $difficultyValue = $themePokemon;
         }
 
