@@ -32,61 +32,61 @@ $themeHitman = [
         "img" => "images/hitman/47.jpg",
         "name" => "agent 47",
         "title" => "Agent 47",
-        "description" => ""
+        "description" => "The titular character of the Hitman games series who loves puns"
     ],
     [
         "img" => "images/hitman/Diana.jpg",
         "name" => "diana burnwood",
         "title" => "Diana Burnwood",
-        "description" => "Working as 47 handeler and is one of the best characters"
+        "description" => "47's handeler and one of the best characters in the game"
     ],
     [
         "img" => "images/hitman/Lucas-Grey.jpeg",
         "name" => "lucas grey",
         "title" => "Lucas Grey",
-        "description" => ""
+        "description" => "47's childhood friend and is an ally in Hitman 2"
     ],
     [
         "img" => "images/hitman/Arthur-Edwards.jpeg",
         "name" => "arthur edwards",
         "title" => "Arthur Edwards",
-        "description" => ""
+        "description" => "The main antagonist in the Hitman trilogy"
     ],
     [
         "img" => "images/hitman/Duck.jpeg",
         "name" => "a rubber duck",
         "title" => "Pale Duck",
-        "description" => ""
+        "description" => "The most iconic weapon and the most fun to use"
     ],
     [
         "img" => "images/hitman/Symbol.jpg",
         "name" => "hitman logo",
         "title" => "Hitman Logo",
-        "description" => ""
+        "description" => "The logo for the hitman series and used as stars in the first game in the trilogy"
     ],
     [
         "img" => "images/hitman/47-Promo.jpg",
         "name" => "agent 47",
         "title" => "Hitman 2",
-        "description" => ""
+        "description" => "The game\nHitman 2 was released the 13:th of November 2018"
     ],
     [
         "img" => "images/hitman/Pistol.jpeg",
         "name" => "pistol",
         "title" => "Silent Pistol",
-        "description" => ""
+        "description" => "Not the most uniqe method but it gets the job done"
     ],
     [
         "img" => "images/hitman/Poison.jpeg",
         "name" => "poison",
         "title" => "Lethal Poison",
-        "description" => ""
+        "description" => "Perfect for putting in drinks and food, just make sure you don't taste it first"
     ],
     [
         "img" => "images/hitman/Screwdriver.jpeg",
         "name" => "screwdriver",
         "title" => "Screwdriver",
-        "description" => "It may seem harmless but is very effective"
+        "description" => "It may seem harmless but is a very effective and discreet weapon"
     ],
     [
         "img" => "images/hitman/Coin.jpeg",
@@ -98,13 +98,13 @@ $themeHitman = [
         "img" => "images/hitman/Briefcase.jpeg",
         "name" => "a briefcase",
         "title" => "Briefcase",
-        "description" => "Great for carrying around"
+        "description" => "Great for carrying around just about anything, and great for throwing"
     ],
     [
         "img" => "images/hitman/Lockpick.jpeg",
         "name" => "a lockpick",
         "title" => "Lockpick",
-        "description" => ""
+        "description" => "The most usefull tool that you always forget to bring"
     ],
     [
         "img" => "images/hitman/Fish.jpeg",

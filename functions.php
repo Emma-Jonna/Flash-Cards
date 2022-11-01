@@ -10,7 +10,6 @@ function difficultyMap(array $memoryMap)
 
         foreach ($row as $block) {
 ?>
-            <!-- <div><?php echo $block ?></div> -->
             <div></div>
 <?php
         }
@@ -38,6 +37,16 @@ function randomGif(array $gifs): int
     $randomGifKey = rand(0, count($gifs) - 1);
 
     return $randomGifKey;
+}
+
+function checkRandomNumber(int $randomNumber, int $newRandomNuber): bool
+{
+
+    if ($randomNumber === $newRandomNuber) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 function ShuffleCards(array $cards): array

@@ -13,9 +13,13 @@ require("./header.php");
 </header>
 <main>
 
+    <?php
+    $randomNumber = randomGif($startpageGifs);
+    ?>
+
     <section class="gif-and-startbutton">
         <div class="gif">
-            <img src="<?php echo $startpageGifs[randomGif($startpageGifs)] ?>" alt="">
+            <img src="<?php echo $startpageGifs[$randomNumber] ?>" alt="">
         </div>
         <a class="start-button" type="button" href="theme.php">Start</a>
     </section>
