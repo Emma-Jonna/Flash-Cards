@@ -125,90 +125,90 @@ $themeFireEmblem = [
         'img' => 'images/fire-emblem/Chrom.png',
         'name' => 'Chrom',
         'title' => 'Chrom',
-        'description' => "Starting Class: \n Lord \n Possible Classes: \n Great Lord, Paladin, etc"
+        'description' => "Starting Class:\nLord\nPossible Classes:\n Great Lord,\nPaladin, etc"
     ],
     [
         'img' => 'images/fire-emblem/Robin F.png',
         'name' => 'female Robin',
         'title' => 'Robin',
-        'description' => "Starting Class: \n \n Possible Classes: \n"
+        'description' => "Starting Class:\nTactician\nPossible Classes:\nGrandmaster,\nAssassin, etc"
     ],
     [
         'img' => 'images/fire-emblem/Frederik.png',
         'name' => 'Frederik', 'title' => 'Frederik',
-        'description' => "Starting Class: \n \n Possible Classes: \n"
+        'description' => "Starting Class:\nGreat Knight\nPossible Classes:\nPalladin,\nGeneral, etc"
     ],
     [
         'img' => 'images/fire-emblem/Lissa.png',
         'name' => 'Lissa',
         'title' => 'Lissa',
-        'description' => "Starting Class: \n \n Possible Classes: \n"
+        'description' => "Starting Class:\nCleric\nPossible Classes:\nSage,\nDark Flier, etc"
     ],
     [
         'img' => 'images/fire-emblem/Validar.png',
         'name' => 'Validar',
         'title' => 'Validar',
-        'description' => "Starting Class: \n \n Possible Classes: \n"
+        'description' => "Starting Class:\n Sorcerer\n Possible Classes:\nUnown"
     ],
     [
         'img' => 'images/fire-emblem/Aversa.png',
         'name' => 'Aversa',
         'title' => 'Aversa',
-        'description' => "Starting Class: \n \n Possible Classes: \n"
+        'description' => "Starting Class:\n Dark Flier\nPossible Classes:\nWyvern Lord,\nSorcerer, etc"
     ],
     [
         'img' => 'images/fire-emblem/Gangrel.png',
         'name' => 'Gangrel',
         'title' => 'Gangrel',
-        'description' => "Starting Class: \n \n Possible Classes: \n"
+        'description' => "Starting Class:\nTrickster\nPossible Classes:\nWarrior,\nDark Knight, etc"
     ],
     [
         'img' => 'images/fire-emblem/Gaius.png',
         'name' => 'Gaius',
         'title' => 'Gaius',
-        'description' => "Starting Class: \n \n Possible Classes: \n"
+        'description' => "Starting Class:\nThief\nPossible Classes:\nAssassin,\nHero, etc"
     ],
     [
         'img' => 'images/fire-emblem/Panne.png',
         'name' => 'Panne',
         'title' => 'Panne',
-        'description' => "Starting Class: \n \n Possible Classes: \n"
+        'description' => "Starting Class:\nTaguel\nPossible Classes:\nWyvern Lord,\nTrickster, etc"
     ],
     [
         'img' => 'images/fire-emblem/Maribelle.png',
         'name' => 'Maribelle',
         'title' => 'Maribelle',
-        'description' => "Starting Class: \n \n Possible Classes: \n"
+        'description' => "Starting Class:\nTroubadour\nPossible Classes:\nValkyrie,\nFalcon Knight, etc"
     ],
     [
         'img' => 'images/fire-emblem/Henry.png',
         'name' => 'Henry',
         'title' => 'Henry',
-        'description' => "Starting Class: \n \n Possible Classes: \n"
+        'description' => "Starting Class:\nDark Mage\nPossible Classes:\nSorcerer,\nDark Knight, etc"
     ],
     [
         'img' => 'images/fire-emblem/Lon\'qu.png',
         'name' => 'Lon\'qu',
         'title' => 'Lon\'qu',
-        'description' => "Starting Class: \n \n Possible Classes: \n"
+        'description' => "Starting Class:\nMyrmidon\nPossible Classes:\nSwordmaster,\nAssassin, etc"
     ],
     [
         'img' => 'images/fire-emblem/Libra.png',
         'name' => 'Libra',
         'title' => 'Libra',
-        'description' => "Starting Class: \n \n Possible Classes: \n"
+        'description' => "Starting Class:\nWar Monk\nPossible Classes:\nSage,\nDark Knight, etc"
     ],
     [
         'img' => 'images/fire-emblem/Basilio.png',
         'name' => 'Basilio',
         'title' => 'Basilio',
-        'description' => "Starting Class: \n \n Possible Classes: \n"
+        'description' => "Starting Class:\nWarrior\nPossible Classes:\nBerseker,\nHero, etc"
     ],
     [
         'img' => 'images/fire-emblem/Flavia.png',
         'name' => 'Flavia',
         'title' => 'Flavia',
-        'description' => "Starting Class: \n \n Possible Classes: \n"
+        'description' => "Starting Class:\nHero\nPossible Classes:\nBow Knight,\nGreat Knight, etc"
     ]
 ];
 

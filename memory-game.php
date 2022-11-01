@@ -46,7 +46,7 @@ $difficultyValue = $_GET['difficulty'];
                 <section class="flash-card">
                     <div class="flash-card-inner">
                         <div class="back-of-card">
-                            <p><?php echo $image['title'] .  "<br>" . $image['description']; ?></p>
+                            <p><?php echo nl2br($image['title'] . "\n" . $image['description']); ?></p>
                         </div>
                         <div class="front-of-card">
                             <img src="<?php echo $image['img'] ?>" alt="<?php echo $image['name'] ?>">

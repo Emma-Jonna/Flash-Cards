@@ -11,7 +11,7 @@ $themeValue = $_GET['theme'];
 ?>
 <header>
     <div class="difficulty-title">
-        <h2>Chose amount of cards</h2>
+        <h2>Chose the amount of cards</h2>
     </div>
 </header>
 <main>
