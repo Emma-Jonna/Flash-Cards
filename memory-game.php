@@ -69,7 +69,7 @@ $difficultyValue = $_GET['difficulty'];
 
         if ($hasTaste === true) {
         ?>
-            <p><?php echo nl2br("You have\ngood taste in games") ?></p>
+            <p class="secret-message"><?php echo nl2br("You have\ngood taste in games") ?></p>
         <?php
         } ?>
 
