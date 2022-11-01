@@ -65,13 +65,15 @@ $difficultyValue = $_GET['difficulty'];
     <section class="choice-buttons">
         <a class="back-to-start" type="button" href="index.php">Back to start</a>
 
-        <?php
+        <div class="secret-message">
+            <?php
 
-        if ($hasTaste === true) {
-        ?>
-            <p class="secret-message"><?php echo nl2br("You have\ngood taste in games") ?></p>
-        <?php
-        } ?>
+            if ($hasTaste === true) {
+            ?>
+                <p><?php echo nl2br("You have good taste in games") ?></p>
+            <?php
+            } ?>
+        </div>
 
         <a class="shuffle-cards" type="button" href="memory-game.php?theme=<?php echo $themeValue ?>&difficulty=<?php echo $difficultyValue ?>">Shuffle cards</a>
     </section>

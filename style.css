@@ -25,20 +25,12 @@ body {
   background-color: var(--background-color);
 }
 
-a,
-.secret-message {
+a {
   font-family: 'Lexend';
   text-decoration: none;
   color: var(--font-color);
   font-size: 24px;
   text-align: center;
-}
-
-.secret-message {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 h1 {
