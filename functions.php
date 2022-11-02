@@ -39,16 +39,6 @@ function randomGif(array $gifs): int
     return $randomGifKey;
 }
 
-function checkRandomNumber(int $randomNumber, int $newRandomNuber): bool
-{
-
-    if ($randomNumber === $newRandomNuber) {
-        return true;
-    } else {
-        return false;
-    }
-}
-
 function ShuffleCards(array $cards): array
 {
     //https://www.w3schools.com/php/func_array_shuffle.asp

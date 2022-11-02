@@ -13,9 +13,7 @@ require("./header.php");
 </header>
 <main>
 
-    <?php
-    $randomNumber = randomGif($startpageGifs);
-    ?>
+    <?php $randomNumber = randomGif($startpageGifs); ?>
 
     <section class="gif-and-startbutton">
         <div class="gif">

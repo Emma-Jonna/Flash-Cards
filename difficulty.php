@@ -19,23 +19,11 @@ $themeValue = $_GET['theme'];
     <section class="difficulty-maps">
         <div class="difficuly-visual-cards">
 
-            <div class="easy-map-container">
-                <?php
-                difficultyMap($memoryMapEasy);
-                ?>
-            </div>
+            <div class="easy-map-container"><?php difficultyMap($memoryMapEasy); ?></div>
 
-            <div class="medium-map-container">
-                <?php
-                difficultyMap($memoryMapMedium);
-                ?>
-            </div>
+            <div class="medium-map-container"><?php difficultyMap($memoryMapMedium); ?></div>
 
-            <div class="hard-map-container">
-                <?php
-                difficultyMap($memoryMapHard);
-                ?>
-            </div>
+            <div class="hard-map-container"><?php difficultyMap($memoryMapHard); ?></div>
         </div>
     </section>
 
