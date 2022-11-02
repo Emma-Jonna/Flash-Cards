@@ -2,12 +2,12 @@
 
 # Flash Cards
 
-Text about the project and why it exists. This would also be a great place to link the project on One.com.<br>
+Just a simple litte Flash Card program with videogame trivia, probably not very useful but it was a fun project.<br>
 <a href="https://www.johannaep.se/Flash-Cards/index.php">Link to my Webbsite</a>
 
 # Installation
 
-Add the installation instructions.
+Nothing fancy in this project, just clone or fork the repository and you should be fine.
 
 # Code Review
 
