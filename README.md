@@ -11,13 +11,20 @@ Nothing fancy in this project, just clone or fork the repository and you should 
 
 # Code Review
 
-Code review written by [Jane Doh](https://github.com/username).
+Code review written by [Ruben Olander](https://github.com/rubenolander).
 
-1. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-2. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-3. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-4. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-5. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
+1. `index.php:20` - Remember that you can use "<?=" instead of "<?php echo". There are some more instances of this throughout the project.
+2. `index.php:20` - You should find a way to work in related info in the alt class. Just like you do with the pictures in /memory-game.php:55 =) !
+3. `memory-game.php:72` - I'm guessing this might be a remnant of an earlier string/echo but there's no need for the nl2br() function if you don't make a new line.
+4. `memory-game.php:18` - This page should have a header element above the card section. a11y-thing.
+5. * - Now I didn't really have any issues following the flow of the code, it's really neat, well separated (files) and it's variables well named. 
+Though you could keep in mind the usefulness of some well placed comments here and there. 
+As our projects grow in size and scope, and we perhaps take breaks from them, there might be lines and functions you forget how they work etc. 
+
+Well done, very fun page! Side note: doesn't really work in the firefox browser. 
+I had to switch to Edge to clearly see the text on the back of the cards. With firefox the text is hidden behind a mirror of the image.
+I don't really know how to fix that though.
+
 
 # Testers
 
